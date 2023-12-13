@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&family=Titillium+Web&display=swap');
+
+.height100 {
+    height: 100vh;
+  }
+  
+.textAlignStart {
+text-align: start;
+}
+
+.textAlignCenter {
+text-align: center;
+}
+
+.flex {
+display: flex;
+}
+
+.spaceBetween {
+justify-content: space-between;
+}
+
+.alignCenter {
+align-items: center;
+}
+
+.justifyCenter {
+justify-content: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.row {
+flex-direction: row;
+}
+
+.column {
+flex-direction: column;
+}
+
+.flexEnd {
+align-self: flex-end;
+}
+
+.smallGap {
+gap: 0.5rem;
+}
+
+.bigGap {
+gap: 20px;
+}
+
+.marginTop {
+margin-top: 1rem;
+}
+
+.marginBottom {
+margin-bottom: 1rem;
+}
+
+.fontPadding {
+padding: 0.5rem;
+}
+
+.wrap {
+flex-wrap: wrap;
+}
+
+.textDecorationNone {
+    text-decoration: None;
+}
+
+.listStyleNone {
+    list-style: None;
+}
+
+.backgroundBlue {
+    background-color: #023047;
+}
+
+
+/* .background1 {
+    background-color: red;
+} */
+
+.altura {
+    margin-top: 130px;
+}
+
+.alturaMenor {
+    margin-top: 50px;   
+}
+
+
+.gap {
+    gap: 20px;
+}
+
+.titulo {
+    color: #FA8400;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 20px;
+}
+
+.marginBottom {
+    margin-bottom: 120px;
+}

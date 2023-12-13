@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    padding: 30px 110px 30px 70px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.container ul li {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.lastButton {
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    background-color: #FA8400;
+    border: None;
+}
