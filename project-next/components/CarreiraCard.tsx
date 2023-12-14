@@ -8,7 +8,7 @@ type CarreiraCardProps = {
 
 function CarreiraCard(props: CarreiraCardProps ) {
     return (
-        <div className={`${ styles.CarreiraCard} ${shared.flex} ${shared.wrap}`}>
+        <div className={`${ styles.CarreiraCard} ${shared.flex} ${shared.alignCenter}  ${shared.bigGap} ${shared.wrap}`}>
             {props.children}
         </div>
     );

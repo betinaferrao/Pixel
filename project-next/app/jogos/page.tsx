@@ -2,8 +2,12 @@
 import shared from '../../styles/Shared.module.css'
 import styles from '../../styles/Jogos.module.css'
 import CarreiraCard from '@/components/CarreiraCard'
+import { getCarreiras } from '@/sanity/sanity-utils';
 
-export default function Jogos() {
+export default async function Jogos() {
+
+  const carreiras = await getCarreiras();
+
   return (
     <div className={`${shared.background1} ${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
         <div>
@@ -26,24 +30,23 @@ export default function Jogos() {
           </div>
         </div>
 
+        
         <div className={`${styles.cardCarr} `}>
           <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${shared.titulo}`}>Carreira</h1>
-          <div className={`${styles.carreira}`}>
-            <CarreiraCard>
-                <p>Oi</p>
-            </CarreiraCard>
-            <CarreiraCard>
-                <p>Ola</p>
-            </CarreiraCard>
-            <CarreiraCard>
-                <p>Oi</p>
-            </CarreiraCard>
-            <CarreiraCard>
-                <p>Oi</p>
-            </CarreiraCard>
-            <CarreiraCard>
-                <p>Oi</p>
-            </CarreiraCard>
+          <div className={`${styles.carreira} `}>
+            {carreiras.map((carreira) => (
+              <div key={carreira._id} className={`${shared.flex} ${styles.carddd}`}>
+                  <CarreiraCard>
+                    <div className={`${shared.flex} ${shared.column}  ${shared.justifyCenter} ${styles.cardCarreira}`}>
+                      <p className={`${styles.nome}`}>{carreira.name}</p>
+                      <div className={`${shared.flex} ${shared.row} ${shared.smallGap}`}> 
+                        <p className={`${styles.cargo}`}>{carreira.cargo}</p>
+                        <p className={`${styles.tipoTrabalho}`}>{carreira.tipo_trabalho}</p>
+                      </div>
+                    </div>
+                  </CarreiraCard>
+              </div>
+            ))}
           </div>
         </div>
     </div>

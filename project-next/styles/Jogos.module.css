@@ -26,18 +26,37 @@
 
 .carreira {
     margin-bottom: 120px;
-    width: 1240px;
-    height: 333px;
-    border: 1px solid red;
-    max-height: 300px;
+    width: 1260px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
-    
-    /* overflow: auto; */
 }
 
 .cardCarr {
     margin-top: 50px;
+}
+
+.cardCarreira {
+    gap: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nome {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cargo, .tipoTrabalho {
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+.carddd {
+    border: 2px solid pink;
 }
