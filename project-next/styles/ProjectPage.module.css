@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Press+Start+2P&family=Source+Code+Pro&family=Titillium+Web&display=swap');
+
+.container {
+    width: 1240px;
+}
+
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: Montserrat;
+}
+
+.imagem {
+    width: 1240px;
+    height: 368px;
+}
+
+.content {
+    margin-top: 30px;
+    color: white;
+    
+}

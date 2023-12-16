@@ -14,6 +14,7 @@ export default defineConfig({
         S.list().title('Gerenciamento do site').items([
             S.documentTypeListItem('project').title('Projetos'),
             S.documentTypeListItem('carreira').title('Carreiras'),
+            S.documentTypeListItem('jogo').title('Jogos'),
         ])
     )})],
     schema: {types: [...schemas]}

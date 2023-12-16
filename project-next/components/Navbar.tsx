@@ -6,11 +6,11 @@ import styles from '../styles/Navbar.module.css'
 const NavLinks = [
     {
         title: "Jogos",
-        path: "/jogos",
+        path: "/#jogos",
     },
     {
         title: "Sobre",
-        path: "/sobre",
+        path: "/#sobre",
     },
     {
         title: "Blog",

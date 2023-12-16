@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Press+Start+2P&family=Source+Code+Pro&family=Titillium+Web&display=swap');
+
+.titulo {
+    color: white;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.input {
+    padding: 15px 20px 15px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.inputLast {
+    padding: 40px 20px 40px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.botao {
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    background-color: #FA8400;
+    border: None;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.divForm {
+    margin-top: 30px;
+}
+
+.forms {
+    width: 500px;
+}

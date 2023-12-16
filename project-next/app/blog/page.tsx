@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Card from '@/components/Card';
 import Image from 'next/link';
 import { SanityImage } from '@/components/sanity-image';
+import { PortableText } from "@portabletext/react"; 
 
 
 export default async function Blog() {
@@ -16,22 +17,24 @@ export default async function Blog() {
     <div className={`${shared.background1} ${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
         <h1 className={`${shared.titulo}`} >Blog</h1>
         <div className={`${styles.area} ${shared.marginBottom}`} >
-            {projects.map((project) => (
-                <Card>
-                    <div key={project._id} className={`${shared.flex} ${shared.column}`}> 
-                        {/* <a>
-                            <img src={project.image} alt="" width={300} height={200} />
-                        </a> */}
+            {projects.map((project, index) => (
+                <Card isFirst={index === 0}>
+                    <div key={project._id} className={index === 0 ? styles.firstItem : `${shared.flex} ${shared.column}`}> 
                         {project.image && <SanityImage
                             className={styles.imagem}
                             asset={project.image}
                             alt='a'
                             quality={70}
-                            // placeholder="blur"
-                            // blurDataURL={project.image}
                         />}
                         
+                        <div className={index === 0 ? styles.first : ''}>
                         <Link href={`/projects/${project.slug}`} className={`${styles.nome}`}>{project.name}</Link>
+                        {index === 0 && (
+                            <div>
+                                <PortableText value={project.content} />
+                            </div>
+                        )}
+                        </div>
                     </div>
                 </Card>
             ))}      

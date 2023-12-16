@@ -81,9 +81,6 @@ flex-wrap: wrap;
 }
 
 
-/* .background1 {
-    background-color: red;
-} */
 
 .altura {
     margin-top: 130px;
@@ -106,4 +103,13 @@ flex-wrap: wrap;
 
 .marginBottom {
     margin-bottom: 120px;
+}
+
+.botaogeral {
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    background-color: #FA8400;
+    border: None;
 }

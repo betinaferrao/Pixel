@@ -1,3 +1,75 @@
-.altura {
-    margin-top: 200px;
+.margin {
+    margin-top: 20px;
 }
+
+.paragrafo {
+    width: 625px;
+    height: 692px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-indent: 20px;
+}
+
+.imagem {
+    width: 566px;
+    height: 692px;
+}
+
+.gap {
+    gap: 32px;
+}
+
+.carreira {
+    margin-bottom: 120px;
+    width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cardCarr {
+    margin-top: 50px;
+}
+
+.cardCarreira {
+    gap: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nome {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cargo, .tipoTrabalho {
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+.carddd {
+    border: 2px solid pink;
+}
+
+
+
+.containerJogos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagemm {
+    width: 400px;
+    height: 300px;
+}
+

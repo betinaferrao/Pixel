@@ -1,0 +1,28 @@
+.titulo {
+    color: #FA8400;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.imagem {
+    width: 1240px;
+    height: 490px;
+}
+
+.containerr {
+    width: 1240px;
+    color: white;
+}
+
+.valor {
+    font-size: 20px;
+}
+
+.estiloValorComprar {
+    margin-top: 20px;
+}
+
+.content {
+    margin-top: 30px;
+}

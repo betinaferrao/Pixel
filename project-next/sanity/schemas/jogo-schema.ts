@@ -1,6 +1,6 @@
-const project = {
-    name: 'project',
-    title: 'Projects',
+const jogo = {
+    name: 'jogo',
+    title: 'Jogos',
     type: 'document',
     fields: [
         {
@@ -27,11 +27,11 @@ const project = {
                 }
             ]
         },
-        // {
-        //     name: 'url',
-        //     title: 'URL',
-        //     type: 'url'
-        // },
+        {
+            name: 'valor',
+            title: 'Valor',
+            type: 'string',
+        },
         {
             name: 'content',
             title: 'Content',
@@ -42,4 +42,4 @@ const project = {
 }
 
 
-export default project;
+export default jogo;
