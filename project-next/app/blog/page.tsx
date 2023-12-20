@@ -18,8 +18,8 @@ export default async function Blog() {
         <h1 className={`${shared.titulo}`} >Blog</h1>
         <div className={`${styles.area} ${shared.marginBottom}`} >
             {projects.map((project, index) => (
-                <Card isFirst={index === 0}>
-                    <div key={project._id} className={index === 0 ? styles.firstItem : `${shared.flex} ${shared.column}`}> 
+                <Card key={project._id} isFirst={index === 0}>
+                    <div className={index === 0 ? styles.firstItem : `${shared.flex} ${shared.column}`}> 
                         {project.image && <SanityImage
                             className={styles.imagem}
                             asset={project.image}
