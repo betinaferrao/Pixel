@@ -26,7 +26,7 @@ export default async function Project({ params }: Props){
                                     alt='a'
                                     quality={70}
                                 />}              
-                <p className={`${styles.titulo}`}>{project.name}</p>
+                <p className={`${styles.tituloPage}`}>{project.name}</p>
                 <div className={`${styles.content}`}><PortableText value={project.content} /></div>
             </div>
         </div>

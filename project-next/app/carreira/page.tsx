@@ -24,6 +24,14 @@ export default function Carreira() {
             alert('Por favor, preencha todos os campos!');
             return;
         };
+
+        alert('Dados enviados com sucesso!');
+    
+        // Limpar os campos
+        setNome('');
+        setEmail('');
+        setLink('');
+        setTexto('');
     }
 
     return (

@@ -113,3 +113,28 @@ flex-wrap: wrap;
     background-color: #FA8400;
     border: None;
 }
+
+.zIndex {
+    position: relative;
+    z-index: 20;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .alturaMenor {
+        margin-top: 30px; 
+    }
+
+    .titulo {
+        font-size: 12px; 
+        margin-bottom: 15px;
+    }
+
+    .botaogeral {
+        font-size: 16px; 
+        padding: 8px 16px; 
+    }
+}

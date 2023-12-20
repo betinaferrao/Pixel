@@ -1,14 +1,9 @@
 .card {
-    /* border: 2px solid black; */
     width: fit-content;
     width: 390px;
     height: 332px;
     margin: auto;
-    /* padding: 20px; */
-    /* border: 1px solid #ccc; */
-    /* border-radius: 8px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* overflow: auto; */
 }
 
 .card:hover {
@@ -28,3 +23,13 @@
     height: 100%;
 }
 
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        margin: 10px auto; 
+    }
+
+}

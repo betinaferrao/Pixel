@@ -1,5 +1,6 @@
 .margin {
     margin-top: 20px;
+    border: 2px solid red;
 }
 
 .paragrafo {
@@ -17,6 +18,7 @@
 .imagem {
     width: 566px;
     height: 692px;
+    
 }
 
 .gap {
@@ -56,20 +58,18 @@
 }
 
 
-.carddd {
-    border: 2px solid pink;
+.containerJogosPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
 }
-
-
 
 .containerJogos {
     display: flex;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 1250px;
+    margin-left: 15px;
 }
-
-.imagemm {
-    width: 400px;
-    height: 300px;
-}
-

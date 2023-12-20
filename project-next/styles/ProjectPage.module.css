@@ -5,10 +5,10 @@
 }
 
 
-.titulo {
+.tituloPage {
     color: white;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bold;   
     margin-top: 20px;
     font-family: Montserrat;
 }

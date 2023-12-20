@@ -41,3 +41,19 @@
 .forms {
     width: 500px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .forms {
+        width: 100%; 
+        padding: 0 20px; 
+    }
+
+    .inputLast {
+        padding: 20px; 
+    }
+    
+    .botao {
+        width: 100%; 
+    }
+}

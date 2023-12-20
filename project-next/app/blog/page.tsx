@@ -30,7 +30,7 @@ export default async function Blog() {
                         <div className={index === 0 ? styles.first : ''}>
                         <Link href={`/projects/${project.slug}`} className={`${styles.nome}`}>{project.name}</Link>
                         {index === 0 && (
-                            <div>
+                            <div className={index === 0 ? styles.firstContent : ''}>
                                 <PortableText value={project.content} />
                             </div>
                         )}

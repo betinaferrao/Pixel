@@ -1,4 +1,6 @@
 
+  // "use client"
+  
   import shared from '../styles/Shared.module.css'
   import styles from '../styles/Principal.module.css'
   import CarreiraCard from '@/components/CarreiraCard'
@@ -8,16 +10,17 @@
   import { SanityImage } from '@/components/sanity-image';
   import { Swiper, SwiperSlide } from "swiper/react";
   import SwiperCore, {Navigation, Pagination, Autoplay} from "swiper/modules";
-  
-  export default async function Home() {
+  import { ImageAsset, PortableTextBlock } from "sanity";
+  import SwiperComponent from '@/components/Swiper'; 
 
+
+  export default async function Home(){
     const carreiras = await getCarreiras();
     const jogos = await getJogos();
     console.log(jogos)
-
     return (
       <div className={`${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
-          <div id="jogos" className={`${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
+          <div id="jogos" className={`${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter} ${styles.containerJogosPrincipal} `}>
             <img src="pacman.png" alt="" />
             <div className={`${styles.containerJogos} ${shared.flex} ${shared.alignCenter} ${shared.justifyCenter}`}>
               {/* <Swiper modules={[Navigation, Autoplay]}>
@@ -28,7 +31,9 @@
                   <div>ola</div>
                 </SwiperSlide>
               </Swiper> */}
-              {jogos.map((jogo) => (
+              <SwiperComponent slides={jogos}></SwiperComponent>
+  
+              {/* {jogos.map((jogo) => (
                 <div key={jogo._id} className={`${styles.margin} ${shared.flex} ${shared.gap} `}>
                   <Link href={`/jogos/${jogo.slug}`} className={`${styles.nome}`}>
                     {jogo.image && <SanityImage
@@ -39,30 +44,10 @@
                           />}
                   </Link>
                 </div>
-              ))}
+              ))} */}
+
           </div>
-          {/* <div className={`${styles.margin} ${shared.flex} ${shared.gap} ${shared.alignCenter} ${shared.justifyCenter}`}>
-            <img src="jogos1.png" alt="" />
-            <img src="jogos2.png" alt="" />
-            <img src="jogos3.png" alt="" />
-          </div> */}
         </div>
-
-
-        {/* <div className={`${styles.cardCarr} `}>
-          <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${shared.titulo}`}>Jogos</h1>
-            {jogos.map((jogo) => (
-              <div key={jogo._id} className={`${shared.flex} ${styles.carddd}`}>
-                <Link href={`/jogos/${jogo.slug}`} className={`${styles.nome}`}>
-                  {jogo.image && <SanityImage
-                            className={styles.imagem}
-                            asset={jogo.image}
-                            alt='a'
-                            quality={70}
-                        />}</Link>
-              </div>
-            ))}
-        </div> */}
 
 
         <div id="sobre" className={`${styles.sobre} ${shared.alturaMenor}`}>

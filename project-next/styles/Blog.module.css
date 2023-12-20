@@ -29,18 +29,8 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
-
-}
-/* 
-.firstItem img {
-    margin-left: 0px;
-    width: 50%;
-    height: 70%;
-
-} */
-
-.firstItem{
     display: flex;
+
 }
 
 .first {
@@ -50,3 +40,35 @@
     color: white;
 }
 
+
+.firstContent {
+    max-height: 332px;
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nome {
+        font-size: 20px; /* Reduz o tamanho do texto do nome em telas menores */
+        line-height: 28px; /* Reduz o espaçamento entre linhas em telas menores */
+    }
+
+    .imagem {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-bottom: 5px; /* Reduz a margem inferior da imagem */
+    }
+
+    .area {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    .firstItem {
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    .firstContent {
+        display: none;
+    }
+}
