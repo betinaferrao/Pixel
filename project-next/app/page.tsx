@@ -17,35 +17,13 @@
   export default async function Home(){
     const carreiras = await getCarreiras();
     const jogos = await getJogos();
-    console.log(jogos)
+    // console.log(jogos)
     return (
       <div className={`${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
           <div id="jogos" className={`${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter} ${styles.containerJogosPrincipal} `}>
             <img src="pacman.png" alt="" />
             <div className={`${styles.containerJogos} ${shared.flex} ${shared.alignCenter} ${shared.justifyCenter}`}>
-              {/* <Swiper modules={[Navigation, Autoplay]}>
-                <SwiperSlide>
-                  <div>oi</div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>ola</div>
-                </SwiperSlide>
-              </Swiper> */}
               <SwiperComponent slides={jogos}></SwiperComponent>
-  
-              {/* {jogos.map((jogo) => (
-                <div key={jogo._id} className={`${styles.margin} ${shared.flex} ${shared.gap} `}>
-                  <Link href={`/jogos/${jogo.slug}`} className={`${styles.nome}`}>
-                    {jogo.image && <SanityImage
-                              className={styles.imagemm}
-                              asset={jogo.image}
-                              alt='a'
-                              quality={70}
-                          />}
-                  </Link>
-                </div>
-              ))} */}
-
           </div>
         </div>
 

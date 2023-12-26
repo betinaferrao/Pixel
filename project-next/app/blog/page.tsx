@@ -11,7 +11,7 @@ import { PortableText } from "@portabletext/react";
 export default async function Blog() {
 
   const projects = await getProjects();
-  console.log(projects)
+//   console.log(projects)
 
   return (
     <div className={`${shared.background1} ${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>

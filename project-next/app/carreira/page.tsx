@@ -42,7 +42,7 @@ export default function Carreira() {
             <div className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.divForm}`}>
                 <form onSubmit={handleSubmit}  className={`${shared.flex} ${shared.column} ${shared.marginBottom} ${styles.forms}`} >
                     <div className={`${shared.flex} ${shared.column}`}>
-                        <label className={`${styles.titulo}`}>
+                        <label className={`${styles.tituloForm}`}>
                             Nome:
                         </label>
                         <input
@@ -53,7 +53,7 @@ export default function Carreira() {
                         />
                     </div>
                     <div className={`${shared.flex} ${shared.column}`}>
-                        <label className={`${styles.titulo}`}>
+                        <label className={`${styles.tituloForm}`}>
                             Email:
                         </label>
                         <input
@@ -64,7 +64,7 @@ export default function Carreira() {
                         />
                     </div>
                     <div className={`${shared.flex} ${shared.column}`}>
-                        <label className={`${styles.titulo}`}>
+                        <label className={`${styles.tituloForm}`}>
                             Link para portfólio:
                         </label>
                         <input
@@ -75,7 +75,7 @@ export default function Carreira() {
                         />
                     </div>
                     <div className={`${shared.flex} ${shared.column}`}>
-                        <label className={`${styles.titulo}`}>
+                        <label className={`${styles.tituloForm}`}>
                             Por que você quer fazer parte da Jojos?
                         </label>
                         <input

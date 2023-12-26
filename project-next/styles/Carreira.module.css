@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Press+Start+2P&family=Source+Code+Pro&family=Titillium+Web&display=swap');
 
-.titulo {
+
+.tituloForm {
     color: white;
     margin-bottom: 5px;
-    font-family: Montserrat;
     font-size: 20px;
 }
 

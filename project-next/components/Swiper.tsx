@@ -34,26 +34,6 @@ interface JogosProps {
 
 const SwiperComponent = ({ slides }: JogosProps) => {
   return (
-    // <Swiper slidesPerView={1} modules={[Navigation, Autoplay]}>
-    // <Swiper slidesPerView={3} navigation pagination={{clickable: true}}>
-    //   {slides.map((jogo) => (
-    //     <SwiperSlide key={jogo._id}>
-    //       <div className={`${styles.margin} ${shared.flex} ${shared.gap}`}>
-    //         <Link href={`/jogos/${jogo.slug}`} className={`${styles.nome}`}>
-    //           {jogo.image && (
-    //             <SanityImage
-    //               className={styles.imagemm}
-    //               asset={jogo.image}
-    //               alt='a'
-    //               quality={70}
-    //             />
-    //           )}
-    //         </Link>
-    //       </div>
-    //     </SwiperSlide>
-    //   ))}
-    // </Swiper>
-
     <Swiper
       slidesPerView={3} className={'styles.imagemCarrosel'}>
       {slides.map((jogo) => (

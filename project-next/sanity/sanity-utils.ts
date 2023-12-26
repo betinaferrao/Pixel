@@ -13,6 +13,8 @@ export async function getProjects(): Promise<Project[]> {
             _id,
             _createdAt,
             name,
+            autor,
+            data,
             "slug": slug.current,
             "image": image.asset->,
             "alt": Image.alt->,
@@ -28,6 +30,8 @@ export async function getProject(slug: string): Promise<Project> {
             _id,
             _createdAt,
             name,
+            autor,
+            data,
             "slug": slug.current,
             "image": image.asset->,
             "alt": image.alt->,
@@ -41,12 +45,6 @@ export async function getProject(slug: string): Promise<Project> {
 
 
 export async function getCarreiras(): Promise<Carreira[]> {
-    // const client = createClient({
-    //     projectId: 'n2d1aklf',
-    //     dataset: 'sproduction',
-    //     apiVersion: '2023-03-04',
-    // });
-
     return createClient(clientConfig).fetch(
         groq`*[_type == "carreira"]{
             _id,
