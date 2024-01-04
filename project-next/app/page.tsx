@@ -1,6 +1,4 @@
 
-  // "use client"
-  
   import shared from '../styles/Shared.module.css'
   import styles from '../styles/Principal.module.css'
   import CarreiraCard from '@/components/CarreiraCard'
@@ -18,19 +16,20 @@
     const carreiras = await getCarreiras();
     const jogos = await getJogos();
     // console.log(jogos)
+    
     return (
       <div className={`${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
           <div id="jogos" className={`${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter} ${styles.containerJogosPrincipal} `}>
-            <img src="pacman.png" alt="" />
+            <img className={`${styles.imagemPacman}`} src="pacman.png" alt="" />
             <div className={`${styles.containerJogos} ${shared.flex} ${shared.alignCenter} ${shared.justifyCenter}`}>
               <SwiperComponent slides={jogos}></SwiperComponent>
+            </div>
           </div>
-        </div>
 
 
-        <div id="sobre" className={`${styles.sobre} ${shared.alturaMenor}`}>
+        <div id="sobre" className={`${shared.alturaMenor} ${styles.containerSobre} ${shared.flex} ${shared.column} ${shared.alignCenter}`}>
           <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${shared.titulo}`}>Sobre Nós</h1>
-          <div className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.gap} `}>
+          <div className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.paragragoImagemSobre}`}>
             <p className={`${styles.paragrafo}`}> 
               Bem-vindo à Jojos, uma empresa de jogos retrô brasileira! Somos uma equipe apaixonada por games clássicos e estamos comprometidos em trazer de volta a magia desses títulos que marcaram época. Com gráficos pixelizados, trilhas sonoras envolventes e mecânicas desafiadoras, nossos jogos são verdadeiras homenagens aos consoles e computadores que encantaram o passado. Junte-se a nós e embarque em uma viagem nostálgica repleta de aventuras.<br></br><br></br>
               Acreditamos que os jogos retrô têm o poder de unir gerações, despertar memórias afetivas e proporcionar momentos de pura diversão. Nossa missão é manter viva a essência dos jogos clássicos, levando você a uma jornada inesquecível pelos mundos pixelizados cheios de magia. Faça parte dessa nova era retrô e mergulhe em experiências que continuam a encantar corações até hoje.<br></br><br></br>
@@ -46,8 +45,9 @@
             {carreiras.map((carreira) => (
               <div key={carreira._id} className={`${shared.flex} ${styles.carddd}`}>
                   <CarreiraCard>
+                    {/* <Link href={`/carreira/${carreira.slug}`}></Link> */}
                     <div className={`${shared.flex} ${shared.column}  ${shared.justifyCenter} ${styles.cardCarreira}`}>
-                      <p className={`${styles.nome}`}>{carreira.name}</p>
+                    <Link href={`/carreiras/${carreira.slug}`}><p className={`${styles.nome}`}>{carreira.name}</p></Link>
                       <div className={`${shared.flex} ${shared.row} ${shared.smallGap}`}> 
                         <p className={`${styles.cargo}`}>{carreira.cargo}</p>
                         <p className={`${styles.tipoTrabalho}`}>{carreira.tipo_trabalho}</p>

@@ -16,28 +16,29 @@ export default async function Jogo({ params }: Props){
 
     const jogo = await getJogo(slug);
 
-
-    return (
-        <div className={`${shared.flex} ${shared.column} ${shared.alignCenter}`}>
-            <div className={`${shared.flex} ${shared.alignCenter} ${shared.column} ${styles.container} ${shared.altura} ${shared.marginBottom}`}>              
-                <p className={`${styles.titulo}`}>{jogo.name}</p>
-                <div>
-                    {jogo.image && <SanityImage
-                                className={styles.imagem}
-                                asset={jogo.image}
-                                alt='a'
-                                quality={70}
-                            />}
-                </div>
-                <div className={`${styles.containerr}`}>
-                    <div className={`${shared.flex} ${shared.alignCenter} ${shared.bigGap} ${styles.estiloValorComprar}`}>
-                        <p className={`${styles.valor}`}>Valor: R$ {jogo.valor}</p>
-                        <button className={`${shared.botaogeral}`}>Comprar</button>
+    if (jogo) {
+        return (
+            <div className={`${shared.flex} ${shared.column} ${shared.alignCenter}`}>
+                <div className={`${shared.flex} ${shared.alignCenter} ${shared.column} ${styles.container} ${shared.altura} ${shared.marginBottom}`}>              
+                    <p className={`${styles.titulo}`}>{jogo.name}</p>
+                    <div>
+                        {jogo.image && <SanityImage
+                                    className={styles.imagem}
+                                    asset={jogo.image}
+                                    alt='a'
+                                    quality={70}
+                                />}
                     </div>
-                    <div className={`${styles.content}`}><PortableText value={jogo.content} /></div>
+                    <div className={`${styles.containerr}`}>
+                        <div className={`${shared.flex} ${shared.alignCenter} ${shared.bigGap} ${styles.estiloValorComprar}`}>
+                            <p className={`${styles.valor}`}>Valor: R$ {jogo.valor}</p>
+                            <button className={`${shared.botaogeral}`}>Comprar</button>
+                        </div>
+                        <div className={`${styles.content}`}><PortableText value={jogo.content} /></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
     

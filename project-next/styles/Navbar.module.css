@@ -32,3 +32,53 @@
     background-color: #FA8400;
     border: None;
 }
+
+.toggle_btn {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .toggle_btn {
+        display: block;
+      }
+    
+
+      .toggle_btn {
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        background-color: #FA8400;
+        border: none;
+      }
+    
+      .ul {
+        display: none;
+      }
+
+      .showMenu {
+        padding: 10px;
+        border: 2px solid #FA8400;
+        border-radius: 20px;
+        display: block; 
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .showMenu .lastButton {
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        background-color: transparent;
+        padding-top: 0px;
+        padding-left: 0px;
+        font-weight: 0;
+    }
+
+    .showMenu .lastButton:hover {
+        color: #FA8400;
+    }
+    
+  }

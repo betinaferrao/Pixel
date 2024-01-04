@@ -25,10 +25,21 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .firstCard {   
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    .firstCard img {   
+        width: 400px;
+        height: 250px;
+    }
     .card {
-        width: 100%; 
-        max-width: 300px; 
-        height: auto; 
+        /* width: 100%;  */
+        max-width: 500px; 
+        max-height: 600px;
+        /* height: auto;  */
         margin: 10px auto; 
     }
 

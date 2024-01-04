@@ -57,6 +57,35 @@ export async function getCarreiras(): Promise<Carreira[]> {
     );
 }
 
+// export async function getCarreira(slug: string): Promise<Carreira> {
+//     return createClient(clientConfig).fetch(
+//         groq`*[_type == "carreira" && slug.current == $slug][0]{
+//             _id,
+//             _createdAt,
+//             name,
+//             "slug": slug.current,
+//             cargo,
+//             tipo_trabalho 
+//         }`,
+//         { slug }
+//     );
+// }
+
+export async function getCarreira(slug: string): Promise<Carreira> {
+
+    return createClient(clientConfig).fetch(
+        groq`*[_type == "carreira" && slug.current == $slug][0]{
+            _id,
+             _createdAt,
+             name,
+             "slug": slug.current,
+             cargo,
+             tipo_trabalho
+        }`,
+        { slug }
+    );
+}
+
 
 export async function getJogos(): Promise<Jogo[]> {
 

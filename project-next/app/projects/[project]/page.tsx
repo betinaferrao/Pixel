@@ -17,17 +17,19 @@ export default async function Project({ params }: Props){
 
     const project = await getProject(slug);
     
-
+    if (project) {
     return (
         <div className={`${shared.flex} ${shared.column} ${shared.alignCenter}`}>
             <div className={`${shared.flex} ${shared.column} ${styles.container} ${shared.altura} ${shared.marginBottom}`}>
-                {project.image && <SanityImage
+                {project && project.image && <SanityImage
                                     className={styles.imagem}
                                     asset={project.image}
                                     alt='a'
                                     quality={70}
                                 />}              
+                {project && project.name && (
                 <p className={`${styles.tituloPage}`}>{project.name}</p>
+                )}
                 <div className={`${styles.cardNomeData}`}>
                     {project.autor && (
                         <div className={`${styles.cardNomeData}`}>
@@ -40,5 +42,6 @@ export default async function Project({ params }: Props){
             </div>
         </div>
     );
+    }
 }
     

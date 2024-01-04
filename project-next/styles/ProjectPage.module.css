@@ -33,3 +33,15 @@
 .data {
     margin-left: 5px;
 }
+
+
+@media (max-width: 768px) {
+    .imagem {
+        width: 350px;
+        height: 300px;
+    }
+
+    .container {
+        width: 300px; 
+    }
+}

@@ -26,3 +26,34 @@
 .content {
     margin-top: 30px;
 }
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+
+    .imagem {
+        margin: 40px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .containerr {
+        width: 100%; 
+        margin-left: 80px;
+    }
+
+    .valor {
+        font-size: 18px;
+    }
+
+    .estiloValorComprar {
+        margin-top: 15px;
+    }
+
+    .content {
+        margin-top: 20px; 
+    }
+}
