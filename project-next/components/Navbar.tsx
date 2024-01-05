@@ -32,10 +32,12 @@
         const toggleMenu = () => {
             setShowMenu(!showMenu);
         };
+
+        
         return (
             <div className={`${shared.backgroundBlue} ${styles.navbar}`}>
                 <div className={`${styles.container} ${shared.flex} ${shared.alignCenter} ${shared.spaceBetween}`}> 
-                    <img src="logo.png" alt="Logo" />
+                    <img className={`${styles.logo}`}src="logo.png" alt="Logo" />
                     <nav >
                         <button className={`${styles.toggle_btn}`} onClick={toggleMenu}>
                             ☰

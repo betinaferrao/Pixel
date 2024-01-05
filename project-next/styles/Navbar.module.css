@@ -39,6 +39,10 @@
 
 
 @media (max-width: 768px) {
+
+    .navbar {
+        height: 100px;
+    }
     .toggle_btn {
         display: block;
       }
@@ -46,7 +50,7 @@
 
       .toggle_btn {
         position: absolute;
-        top: 35px;
+        top: 40px;
         right: 40px;
         width: 30px;
         height: 30px;
@@ -61,10 +65,12 @@
       .showMenu {
         padding: 10px;
         border: 2px solid #FA8400;
+        background-color: #023047;
         border-radius: 20px;
         display: block; 
-        margin-top: 40px;
-        margin-left: 20px;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-left: 150px;
     }
 
     .showMenu .lastButton {
@@ -79,6 +85,16 @@
 
     .showMenu .lastButton:hover {
         color: #FA8400;
+    }
+
+    .logo {
+        position: absolute;
+        top: 35px;
+        /* right: 40px; */
+        width: 250px;
+        height: 40px;
+        /* border: 2px solid red; */
+        margin-left: -60px;
     }
     
   }

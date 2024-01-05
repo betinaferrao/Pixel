@@ -80,8 +80,9 @@
 
     .nomeFirst {
         font-size: 18px;
-        margin-top: -16px;
-        max-width: 400px; 
+        margin-top: -30px;
+        margin-left: -340px;
+        max-width: 300px;
         overflow: auto;
 
     }
