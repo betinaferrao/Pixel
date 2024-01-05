@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&family=Titillium+Web&display=swap');
+
+
 .margin {
     margin-top: 20px;
     border: 2px solid red;
@@ -73,6 +76,12 @@
     flex-wrap: wrap;
     width: 1250px;
     margin-left: 15px;
+}
+
+.titulo {
+    color: #FA8400;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 20px;
 }
 
 

@@ -15,7 +15,6 @@
   export default async function Home(){
     const carreiras = await getCarreiras();
     const jogos = await getJogos();
-    // console.log(jogos)
     
     return (
       <div className={`${shared.altura} ${shared.flex} ${shared.column} ${shared.alignCenter} ${shared.justifyCenter}`}>
@@ -28,7 +27,7 @@
 
 
         <div id="sobre" className={`${shared.alturaMenor} ${styles.containerSobre} ${shared.flex} ${shared.column} ${shared.alignCenter}`}>
-          <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${shared.titulo}`}>Sobre Nós</h1>
+          <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.titulo}`}>Sobre Nós</h1>
           <div className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.paragragoImagemSobre}`}>
             <p className={`${styles.paragrafo}`}> 
               Bem-vindo à Jojos, uma empresa de jogos retrô brasileira! Somos uma equipe apaixonada por games clássicos e estamos comprometidos em trazer de volta a magia desses títulos que marcaram época. Com gráficos pixelizados, trilhas sonoras envolventes e mecânicas desafiadoras, nossos jogos são verdadeiras homenagens aos consoles e computadores que encantaram o passado. Junte-se a nós e embarque em uma viagem nostálgica repleta de aventuras.<br></br><br></br>
@@ -40,7 +39,7 @@
 
         
         <div className={`${styles.cardCarr} `}>
-          <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${shared.titulo}`}>Carreira</h1>
+          <h1 className={`${shared.flex} ${shared.alignCenter} ${shared.justifyCenter} ${styles.titulo}`}>Carreira</h1>
           <div className={`${styles.carreira} `}>
             {carreiras.map((carreira) => (
               <div key={carreira._id} className={`${shared.flex} ${styles.carddd}`}>
