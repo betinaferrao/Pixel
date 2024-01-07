@@ -1,1 +1,1 @@
-Projeto Next.js - Pixel
+Projeto Next.js com Sanity - Pixel
